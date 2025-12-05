@@ -1,11 +1,11 @@
 body{
-    background-color:rgb(240, 236, 236);
+    background-color:rgb(1, 1, 29);
     margin: 0;
     padding: 0;
 }
 
 nav{
-    background-color: white;
+      background-color:rgb(1, 1, 29);  
     
     
 }
@@ -16,8 +16,9 @@ nav{
     position: fixed;
     z-index: 1000;
     margin-top: -110px;
-    background-color:rgb(236, 233, 233);
+      background-color:rgb(1, 1, 29);
     width: 100%;
+    color: white;
 
 }
 
@@ -35,7 +36,8 @@ nav{
 }
 
 .hero{
-  background-color:rgb(240, 236, 236);  
+    background-color:rgb(1, 1, 29);
+    color: white 
 }
 
 .hero1{
@@ -47,44 +49,79 @@ nav{
 @keyframes fadin{
     from{opacity: 0; transform: translateY(200px);}
     to{opacity: 1; transform: translateY(0);}
+    /* z-index: 1000; */
+}
+
+.hero2{
+    margin: auto;
 }
 
 .hero12{
-    margin-left: 34%;
+    text-align: center;
     font-size: 50px;
     margin-top: 110px;
 }
 
 .hero13{
-    margin-left: 43%;
+    text-align: center;
     font-size: 30px;
     color: gray;
 }
 
 .hero14{
     font-size: 25px;
-    margin-left: 47%;
+    text-align: center;
 }
 
 .hero14:hover{
     color:rgb(34, 34, 97);
 }
 
+.her{
+    width: 500px;
+    height: 100px;
+    /* border: 2px solid; */
+    margin: auto;
+}
+
+
+
 .hero21{
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 20%;
-    margin-left: 40px;
+    text-align: center;
     color: grey;
+    position: relative;
+}
+
+.line1{
+    position: absolute;
+    display:none;
+}
+
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: aqua;
+    border-radius: 10px;
+    animation: fadin 0.5s forwards;
+    margin-left: 200px;
+    margin-top: -7%;
+}
+
+.hero21:hover .line1{
+    display:block;
+    transition: ease 0.5s;
 }
 
 .hero22{
-    margin-left: 25px;
+    text-align: center;
     font-size: 30px;
 }
 
 .hero23{
-    margin-left: 25px;
+    text-align: center;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
@@ -100,8 +137,7 @@ nav{
 } */
 
 .sec{
-    background-color:rgb(224, 221, 221);
-    width: 1;
+    background-color:rgb(14, 14, 39);
 }
 
 .su{
@@ -109,22 +145,49 @@ nav{
 }
 
 .sec1{
-    margin-left: -12%;
     gap: 50px;
+    margin-left: -18%;
+}
+
+.set{
+    width:  200px;
+    height: 200px;
+    /* border: 2px solid; */
+    margin: auto;
 }
 
 .sec2{
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(199, 197, 197);
+    position: relative;
 }
 
+.line2{
+    position: absolute;
+    display:none;
+}
+
+.line3{
+    width: 100px;
+    height: 5px;
+    background-color: aqua;
+    border-radius: 10px;
+    animation: fadin 0.5s forwards;
+    margin-left: 30px;
+    margin-top: -10%;
+}
+
+.sec2:hover .line2{
+    display:block;
+    transition: ease 0.5s;
+}
 .sec21{
     font-size: 15px;
 }
 
 .sec22{
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .sec23{
@@ -133,7 +196,7 @@ nav{
 }
 
 .sec26{
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .sec27{
@@ -142,7 +205,7 @@ nav{
 }
 
 .sec29{
-   font-size: 20px; 
+   font-size: 40px; 
 }
 
 .sec30{
@@ -155,21 +218,70 @@ nav{
     gap: 40px;
 }
 
+.seca1{
+    width: 900px;
+    height: 500px;
+    /* border: 2px solid;    */
+    display: flex;
+    gap: 50px;
+    margin: auto;
+    margin-top: -5%;
+}
+
 .contact{
-    
+     background-color:rgb(1, 1, 29);
     margin: 0;
     padding: 0;
-    background-color:rgb(240, 236, 236);
+    
 }
 
 .con{
     margin-left: 60px;
+    width: 600px;
+    height: 200px;
+    /* border: 2px solid; */
+    margin: auto;
 }
 
+/* .conca{
+width: 600px;
+height: 100px;
+border: 2px solid;
+} */
+
+.con3a{
+    margin-left: 3%;
+}
 .con1{
    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:gray; 
+    text-align: center;
+    position: relative;
+}
+
+.line4{
+    position: absolute;
+    display: none;
+}
+
+
+.line5{
+    width: 100px;
+    height: 5px;
+    background-color: aqua;
+    border-radius: 10px;
+    animation: fadin 0.5s forwards;
+    margin-left: 250px;
+    margin-top: -10%;
+}
+
+.con1:hover .line4{
+    display: block;
+}
+
+.con2{
+    text-align: center;
 }
 
 .con3{
@@ -245,16 +357,18 @@ textarea{
     display: flex;
     gap: 80%;
     position: fixed;
-    z-index: 1000;
+    /* z-index: 1000; */
     /* margin-top: -80%; */
-    background-color:rgb(236, 233, 233);
+        background-color:rgb(1, 1, 29);
     width: 100%;
     margin-top: -80%;
+    color: white;
 
 }
 .nav12{
     font-size: 23px;
-    margin-left: 10px;
+    margin-left: -70%;
+    margin-top: 20%;
     
 }
 .nav13{
@@ -269,82 +383,128 @@ textarea{
 }
 
 .hero12{
-    margin-left: 10%;
-    font-size: 25px;
-    margin-top: 80%;
+    margin-left: -25%;
+    font-size: 15px;
+    margin-top: 70%;
+    text-align: center;
 }
 
 .hero13{
-    margin-left: 10%;
+    margin-left: -20%;
     font-size: 30px;
     color: gray;
     margin-top: 10%;
+    text-align: center;
 }
 
 .hero14{
-    font-size: 25px;
-    margin-left: 20%;
+    font-size: 20px;
+    margin-left: -23%;
     margin-top: 10%;
+    text-align: center;
+}
+
+
+.her{
+    width: 500px;
+    height: 100px;
+    /* border: 2px solid; */
+    margin: auto;
+    margin-left: -20%;
+    margin-top: -30%;
 }
 
 .hero21{
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 0%;
-    margin-left: 20px;
+    margin-left:-5%;
     color: grey;
     margin-top: 100%;
+    position: relative;
 }
+
+/* .line1{
+    position: absolute;
+    display:none;
+}
+
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: aqua;
+    border-radius: 10px;
+    animation: fadin 0.5s forwards;
+    margin-left: 200px;
+    margin-top: -7%;
+}
+
+.hero21:hover .line1{
+    display:block;
+    transition: ease 0.5s;
+} */
 
 
 .hero22{
-    margin-left: 15px;
+    margin-left: -23%;
     font-size: 15px;
-    margin-top: 10%;
+    margin-top: -10%;
 }
 
 .hero23{
-    margin-left: 15px;
-    font-size: 20px;
+    margin-left: -23%;
+    font-size: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
     margin-top: 10%;
 }
 
 .sec{
-    background-color:rgb(224, 221, 221);
+        /* background-color:rgb(1, 1, 29); */
     width: 1;
 }
 
 .su{
-    margin-left: 250px;
+    /* margin-left: 250px; */
+}
+
+.set{
+    margin: auto;
+    margin-left: -50%;
+}
+
+.seca1{
+    flex-direction: column;
+    margin-top: -50%;
+    gap: 20px;
 }
 
 .sec2{
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(199, 197, 197);
-    margin-left: -190%;
+    margin-left: -19%;
 }
 
 .sec21{
     font-size: 15px;
-    margin-left: -190%;
+    margin-left: -22%;
+    /* flex-direction: column; */
 }
 
 .sec22{
     font-size: 15px;
-    margin-left: -195%;
+    margin-left: -22%;
 }
 
 .sec23{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    margin-left: -220px;
+    margin-left: -22%;
 }
 
 .sec25{
-   margin-left: 0.5%;
+   margin-left: 80%;
 }
 
 .sec26{
@@ -362,12 +522,12 @@ textarea{
 } */
 
 .sec29{
-    margin-left: -180%;
+    /* margin-left: -180%; */
     font-size: 15px;
 }
 
 .sec30{
-    margin-left: -180%;
+    margin-left: 80%;
     font-size: 15px;
 }
 
@@ -378,18 +538,26 @@ textarea{
     flex-direction: column;
 }
 
+.con{
+    margin-left: -40%;
+    width: 600px;
+    height: 200px;
+    /* border: 2px solid; */
+    /* margin: auto; */
+}
+
 .contact{
     
     margin: 0;
     padding: 0;
-    background-color:rgb(240, 236, 236);
+       background-color:rgb(1, 1, 29);
 }
 
 .con1{
-   font-size: 25px;
+   font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:gray; 
-    margin-left: 8%;
+    margin-left:30px;
 }
 
 .con2{
@@ -400,6 +568,7 @@ textarea{
 .con3{
     margin-top: 20px;
     display: flex;
+    margin-left: -8%;
     flex-direction: column;
 }
 
@@ -444,29 +613,29 @@ textarea{
 }
 
 .foo{
-    display: flex;
-    gap: 30%;
+    /* display: flex; */
+    /* gap: 30%; */
 }
 
 .foot{
     font-size: 10px;
-    margin-left: 30%;
+    margin-left: 25%;
     
 }
 
 .foot1{
     /* display: flex; */
-    /* flex-direction: column; */
+    flex-direction: column;
     font-size: 10px;
-    gap: 450px;
+    /* gap: 450px; */
     margin-top: 10%;
-    margin-left: -60%;
+    margin-left: -57%;
 }
 
 .foot2{
    font-size: 7px;
-    gap: 450px;
+    /* gap: 450px; */
     margin-top: 25%;
-    margin-left: -73%;
+    margin-left: -75%;
 }
 }
