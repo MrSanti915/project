@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stlye.css">
+</head>
+
+<body>
+    <!-- begining of nav bar
+    <div class="nav">
+        <div class="nav11">
+            <div class="nav12">
+                <p>Aura</p>
+            </div>
+            <div class="nav13">
+                <div class="nav14">
+                    <p>About</p>
+                </div>
+
+                <div class="nav15">
+                    <p>Services</p>
+                </div>
+
+                <div class="16">
+                    <p>Contact</p>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- begining of hero -->
+
+    <div class="hero">
+        <div class="hero1">
+            <div class="au">
+                <h1>Aura Studio</h1>
+            </div>
+            <p>Bringing ideas to life.</p>
+            <p>Get in touch</p>
+        </div>
+
+        <div class="hero2">
+                <div class="hero21">
+                    <h1>About us</h1>
+                </div>
+
+
+            <div class="hero22">
+                <p>Aura Studio is a London-based creative <br> agency that helps brands express their unique <br>
+                    identity
+                    through modern, minimalist design.</p>
+            </div>
+
+            <div class="hero23">
+                <p>We specialize in creating clean aesthetics, strong visuals, <br> and compelling storytelling through
+                    thoughtful design. <br> Every project is an opportunity to craft  something meaningful.</p>
+            </div>
+        </div>
+
+        <!-- section -->
+
+        <div class="sec">
+            <div class="server">
+                <h2>SERVICES</h2>
+            </div>
+            <div class="server-grid">
+                <div class="card">
+                    <h2>01</h2><br>
+                    <h4>BRANDING</h4><br>
+                    <h4>Strategic brand identity that captures <br>your essence and resonates with your <br> audience.
+                    </h4>
+                </div>
+                <div class="card">
+                    <h2>02</h2><br>
+                    <h4>UI/UX</h4><br>
+                    <h4>Intuitive digital experiences that delight users and drive meaningful engagement.</h4>
+                </div>
+                <div class="card">
+                    <h2>03</h2><br>
+                    <h4>WEB DESIGN</h4><br>
+                    <h4>Beautiful, responsive websites that tell  your story and elevate your online <br> presence.
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="con">
+                <h2>CONTACT</h2>
+                <h3>Lets Create Something Together</h3>
+            </div>
+
+            <form class="form">
+                <label for="Name">Name</label><br>
+                <input type="text" placeholder="Full Name"><br><br>
+                <label for="Email">Email</label><br>
+                <input type="text" placeholder="@johnsam.gmail.com"><br><br>
+                <label for="Message">Message</label><br>
+                <textarea name="Message" id="Input your messages here"></textarea><br><br>
+                <button class="button2">Subbmit</button>
+            </form>
+        </div>
+
+
+        body{
+    background: linear-gradient(to right, black, rgb(1, 1, 75));
+    margin: 0;
+    padding: 0;
+    font-family: "roboto",sans-serif;
+    font-size: 18px;
+}
+
+
+
+.hero{
+    background-size: 200%;
+    padding-top: 3%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    color:white;
+}
+
+.hero1{
+   text-align: center;
+   font-size: 30px; 
+   
+}
+
+.au{
+    text-align: center;
+    color: white;
+      /* background: linear-gradient(to right, #ef4444,#3b82f6);
+      background-clip: text;
+      -webkit-background-clip: text;
+    color: transparent; */
+}
+
+
+.hero2{
+    text-align: center;
+}
+
+
+
+
+
+.hero21{
+    font-size: 20px;
+    font-family:"roboto",sans-serif;
+    margin-top: 20%;
+    text-align: center;
+    color: white;
+}
+
+
+.hero22{
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero23{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+
+.hero2{
+    animation: about 5s ease-in-out forwards;
+}
+
+/* @keyframes about{
+    from{opacity: 0; transform: translateY(200px);}
+    to{opacity: 1; transform: translateY(0);}   
+} */
+
+.sec{
+    /* background-color:rgb(14, 14, 39); */
+}
+
+.server{
+    text-align: center;
+    padding-top: 20px;
+     /* background: linear-gradient(to right, #ef4444,#3b82f6);
+      background-clip: text;
+      -webkit-background-clip: text; */
+    color:white;
+
+}
+
+.server-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:50px;
+  max-width:1000px;
+  margin:30px auto;
+}
+
+.card{
+  padding:20px;
+   background: linear-gradient(to right, rgb(1, 1, 41), rgb(0, 0, 46));
+  border-radius:15px;
+  transition:0.3s;
+  color:white;
+  box-shadow: 0 0 5px black,0 0 5px black,0 0 10px black;
+}
+
+.card:hover{
+    /* background-color:black; */
+    color: white;
+    transform: scale(1.05);
+    /* border: 1.5px solid purple; */
+}
+
+
+.contact{
+       background: linear-gradient(to right, rgb(1, 1, 41), rgb(0, 0, 46));
+    margin: 0;
+    padding: 0;
+    color: black;
+    height: 700px;
+    
+}
+
+.con{
+    text-align: center;
+    padding: 30px;
+    color:white;
+}
+
+.form{
+    /* margin-left: 40%; */
+    padding: 20px;
+    background-color:#4f4f50;
+    width: 350px;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.form input{
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+.form textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.button2{
+  padding:12px 155px;
+    background: linear-gradient(to right, rgb(1, 1, 41), rgb(0, 0, 46));   
+  color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  margin-top:10px;
+  transition:0.3s;
+}
+
+.button2:hover{
+    transform: scale(1.05);
+}
+
+
+.footer{
+ 
+ margin-top: 50px;  
+}
+
+.foot{
+    text-align: center;
+    height: 150px;
+    padding-top: 30px;
+}
+
+
+
+@media(max-width:768px){
+  .main-content{padding-top:100px; max-width: 100%;}
+   body{
+    background: linear-gradient(to right, black, rgb(1, 1, 75));
+    margin: 0;
+    padding: 0;
+    font-family: "roboto",sans-serif;
+    font-size: 18px;
+}
+
+
+
+.hero{
+    background-size: 200%;
+    padding-top: 3%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    color:white;
+}
+
+.hero1{
+   text-align: center;
+   font-size: 30px; 
+   
+}
+
+.au{
+    text-align: center;
+    color: white;
+      /* background: linear-gradient(to right, #ef4444,#3b82f6);
+      background-clip: text;
+      -webkit-background-clip: text;
+    color: transparent; */
+}
+
+
+.hero2{
+    text-align: center;
+}
+
+
+
+
+
+.hero21{
+    font-size: 20px;
+    font-family:"roboto",sans-serif;
+    margin-top: 20%;
+    text-align: center;
+    color: white;
+}
+
+
+.hero22{
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero23{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+
+.hero2{
+    animation: about 5s ease-in-out forwards;
+}
+
+/* @keyframes about{
+    from{opacity: 0; transform: translateY(200px);}
+    to{opacity: 1; transform: translateY(0);}   
+} */
+
+.sec{
+    /* background-color:rgb(14, 14, 39); */
+}
+
+.server{
+    text-align: center;
+    padding-top: 20px;
+     /* background: linear-gradient(to right, #ef4444,#3b82f6);
+      background-clip: text;
+      -webkit-background-clip: text; */
+    color:white;
+
+}
+
+.server-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:50px;
+  max-width:1000px;
+  margin:30px auto;
+}
+
+.card{
+  padding:20px;
+   background: linear-gradient(to right, rgb(1, 1, 41), rgb(0, 0, 46));
+  border-radius:15px;
+  transition:0.3s;
+  color:white;
+  box-shadow: 0 0 5px black,0 0 5px black,0 0 10px black;
+}
+
+.card:hover{
+    /* background-color:black; */
+    color: white;
+    transform: scale(1.05);
+    /* border: 1.5px solid purple; */
+}
+
+
+.contact{
+       background: linear-gradient(to right, rgb(1, 1, 41), rgb(0, 0, 46));
+    margin: 0;
+    padding: 0;
+    color: black;
+    height: 700px;
+    
+}
+
+.con{
+    text-align: center;
+    padding: 30px;
+    color:white;
+}
+
+.form{
+    /* margin-left: 40%; */
+    padding: 20px;
+    background-color:#4f4f50;
+    width: 350px;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.form input{
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+.form textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.button2{
+  padding:12px 155px;
+    background: linear-gradient(to right, rgb(1, 1, 41), rgb(0, 0, 46));   
+  color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  margin-top:10px;
+  transition:0.3s;
+}
+
+.button2:hover{
+    transform: scale(1.05);
+}
+
+
+.footer{
+ 
+ margin-top: 50px;  
+}
+
+.foot{
+    text-align: center;
+    height: 150px;
+    padding-top: 30px;
+}
+  
+}
